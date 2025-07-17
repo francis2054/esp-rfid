@@ -81,8 +81,8 @@ AsyncWebSocket ws("/ws");
 #define LEDoff LOW
 #define LEDon HIGH
 
-#define BEEPERoff HIGH
-#define BEEPERon LOW
+#define BEEPERoff LOW
+#define BEEPERon HIGH
 
 // Variables for whole scope
 unsigned long cooldown = 0;

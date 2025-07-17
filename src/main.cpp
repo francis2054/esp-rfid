@@ -78,8 +78,8 @@ Bounce openLockButton;
 AsyncWebServer server(80);
 AsyncWebSocket ws("/ws");
 
-#define LEDoff HIGH
-#define LEDon LOW
+#define LEDoff LOW
+#define LEDon HIGH
 
 #define BEEPERoff HIGH
 #define BEEPERon LOW

@@ -40,7 +40,7 @@ void beeperValidAccess()
 {
 	if (config.beeperpin != 255)
 	{
-		beeperOffTime = currentMillis + 2000;
+		beeperOffTime = currentMillis + 500;
 		digitalWrite(config.beeperpin, BEEPERon);
 #ifdef DEBUG
 		Serial.println("Beeper ON");
@@ -51,7 +51,7 @@ void beeperValidAccess()
 void beeperAdminAccess()
 {
 	if (config.beeperpin != 255) {
-		beeperOffTime = currentMillis + 3000;
+		beeperOffTime = currentMillis + 500;
 		digitalWrite(config.beeperpin, BEEPERon);
 #ifdef DEBUG
 		Serial.println("Beeper ON");
@@ -63,7 +63,7 @@ void beeperAccessDenied()
 {
 	if (config.beeperpin != 255)
 	{
-		beeperOffTime = currentMillis + 1000;
+		beeperOffTime = currentMillis + 2000;
 		beeperInterval = 200;
 	}
 }
